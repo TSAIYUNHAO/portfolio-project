@@ -226,6 +226,25 @@ footer a img {
   color: #e08958;
 }
 
+main section.form input.name{
+
+  margin: 0rem 0rem 0rem 4.3rem;
+
+}
+
+main section.form input.mail{
+
+  margin: 0rem 0rem 0rem 2.8rem;
+
+}
+
+main section.form input.phone{
+
+  margin: 0rem 0rem 0rem 1.5rem;
+
+}
+
+
 @media screen and (max-width: 1100px) {
   .orange {
     opacity: 0.5;
