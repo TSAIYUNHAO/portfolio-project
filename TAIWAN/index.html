@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taiwan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+    <    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'GDP'],
+          ['1960',  34394],
+          ['1965', 114762 ],
+          ['1970',231397 ],
+          ['1975', 601778 ],
+          ['1980', 1522459],
+          ['1985',2533056],
+          ['1990',4474288],
+          ['1995', 7391062 ],
+          ['2000',10328549],
+          ['2005',12036675],
+          ['2010', 14060345 ],
+       
+        ]);
+
+        var options = {
+          title: '台湾GDP変化',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+   
+    <header>
+         <h1><i class="twicon-main-island"></i>台湾紹介</h1>
+         <h3> 台湾を知る</h3>
+        
+    </header>
+
+    <nav>
+        <ul>
+           <li><a class ="active"href="#"><i class="twicon-president-office"></i> ホームページ</a></li>
+           <li><a href="./second.html"><i class="twicon-np-mus"></i> 歴史</a></li>
+           <li><a href="./third.html"><i class="twicon-taipei101"></i> 観光</a></li>
+           
+        </ul> 
+    </nav>
+      <main>
+          <section class="left">
+              <p>
+                異国なのだがどこか懐かしい感じのする台湾。かつて日本の植民地でありながら、限りなく日本に愛着と憧憬を持ち続けている人が多く、訪れたならば彼らのあたたかい気持ちにふれることができるだろう。グルメ王国ともいわれる美味しい食べ物と寛ぎのお茶文化、トロピカルな自然とハイテク産業が同居し、漢民族文明と先住民族の文化に触れる島。心からの癒し、エネルギッシュな活力を与えてくれる台湾へ旅立とう。
+              </p>
+              <br>
+              <p>
+                台湾は南北に細長い島で面積は約3.6万平方km、日本の九州よりやや小さいぐらいの大きなです。日本の大阪から約3時間、東京からでも約3時間半のフライトです。
+                台湾は気候が温暖で食べ物も美味しく、治安も良く親日的なので日本人が行きたい海外旅行ランキングでも常に上位に選ばれています。もちろん中国語留学の滞在先としても人気があり、台湾各地に留学生を受け入れている語学学校が数多くあります。
+              </p>
+              <br>
+
+              <div id="curve_chart" style="width: 900px; height: 500px"></div>
+              </section>
+
+              <section class="right">
+                  <h4>台湾の位置はどこですか？ </h4>
+                  <br>
+                  <p>
+                    
+                    台湾本島は北東部で尖閣諸島（釣魚台列嶼）と、台湾本島最南端の岬である鵝鑾鼻（がらんび）はバシー海峡を隔ててフィリピンのバタン諸島及びルソン島と接している。
+                    また、台湾本島西部は台湾海峡に面しており、海峡の中に澎湖諸島が、海峡を隔てた先に中国大陸がある。
+                    台湾地区西端の金馬地区は中国大陸沿岸に位置しており、中国大陸とは最大でも数十kmしか離れていない。
+                    その他、南シナ海の東沙諸島は香港の南方に、太平島と中洲島はフィリピンのパラワン島西方に位置している。    
+                  </p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747578.03873205!2d117.84044109518294!3d23.469690551280845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2z5Y-w54Gj!5e0!3m2!1szh-TW!2sjp!4v1651239476963!5m2!1szh-TW!2sjp" 
+                  width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+      </main>
+
+
+</body>
+</html>
